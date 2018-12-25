@@ -13,6 +13,7 @@ export function publish(queue: string, message?: string) {
   let headers = { ack: 'client' };
   client.connect(headers,  (f) => {
     client.send(queue, headers, message)
+    client.disconnect()
   })
 }
 

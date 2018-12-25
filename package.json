@@ -1,26 +1,29 @@
 {
-  "name": "migration from relational to nosql",
+  "name": "migration_from_relational_to_activemq_using_stompjs",
   "version": "0.0.1",
-  "description": "Example how to use TypeORM with TypeScript.",
+  "description": "Example how to use TypeORM/ActiveMQ with TypeScript.",
   "license": "MIT",
   "readmeFilename": "README.md",
   "author": {
-    "name": "Umed Khudoiberdiev",
-    "email": "pleerock.me@gmail.com"
+    "name": "Sergi Maymi",
+    "email": "smaymi.work@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/typeorm/typescript-example.git"
+    "url": "https://github.com/tetio/migration-psql2amq"
   },
   "bugs": {
-    "url": "https://github.com/typeorm/typescript-example/issues"
+    "url": "https://github.com/tetio/migration-psql2amq/issues"
   },
   "tags": [
     "orm",
     "typescript",
     "typescript-orm",
     "typeorm-sample",
-    "typeorm-example"
+    "typeorm-example",
+    "typescript-stompjs",
+    "stompjs-sample",
+    "stompjs-example"    
   ],
   "devDependencies": {
     "@types/node": "^9.6.5",
@@ -36,9 +39,9 @@
     "typescript": "^2.8.0"
   },
   "scripts": {
-    "start": "tsc && node src/index.js",
+    "noderun": "tsc && node src/index.js",
     "typeorm": "./node_modules/.bin/typeorm ",
-    "start1": "ts-node src/main",
+    "start": "ts-node src/main",
     "prestart:prod": "tsc",
     "start:prod": "node dist/main.js",
     "start:debug": "nodemon --config nodemon-debug.json"
