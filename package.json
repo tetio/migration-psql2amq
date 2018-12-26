@@ -1,5 +1,5 @@
 {
-  "name": "migration_from_relational_to_activemq_using_stompjs",
+  "name": "migration_relational2activemq",
   "version": "0.0.1",
   "description": "Example how to use TypeORM/ActiveMQ with TypeScript.",
   "license": "MIT",

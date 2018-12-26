@@ -1,10 +1,10 @@
 {
-  "type": "postgres",
-  "host": "localhost",
-  "port": 5432,
-  "username": "postgres",
-  "password": "postgres",
-  "database": "dvdrental",
-  "entities": ["src/**/**.entity{.ts,.js}"],
-  "synchronize": false
+  "name": "oracle",
+  "type": "oracle",
+  "host": "10.103.1.106",
+  "username": "portic",
+  "password": "tolos_01",
+  "port": 1521,
+  "servicename": "spicdes",
+  "logging": false
 }
