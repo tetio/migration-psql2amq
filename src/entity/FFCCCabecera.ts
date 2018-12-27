@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn, OneToOne, JoinColumn } from 'typeorm'
 
-@Entity({name: 'FFCC_CABECERA'})
-export class FFCCCabecera {
+@Entity('FFCC_CABECERA', {schema: 'PORTIC'})
+export class FFCC_CABECERA {
     @PrimaryGeneratedColumn({name: 'ID_EXP'}) idExp: number
     @Column({name: 'COD_SERVICIO'}) codServicio: string
     @Column({name: 'EMPRESA_FERROVIARIA'}) empresaFerroviaria: string

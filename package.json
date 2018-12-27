@@ -23,7 +23,7 @@
     "typeorm-example",
     "typescript-stompjs",
     "stompjs-sample",
-    "stompjs-example"    
+    "stompjs-example"
   ],
   "devDependencies": {
     "@types/node": "^9.6.5",
@@ -31,10 +31,11 @@
     "tslint": "^5.9.1"
   },
   "dependencies": {
-    "pg": "^7.7.1",
-    "reflect-metadata": "^0.1.12",
     "@stomp/stompjs": "^4.0.7",
     "nodemon": "^1.18.9",
+    "oracledb": "^3.0.1",
+    "pg": "^7.7.1",
+    "reflect-metadata": "^0.1.12",
     "typeorm": "^0.2.0",
     "typescript": "^2.8.0"
   },

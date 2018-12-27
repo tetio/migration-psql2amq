@@ -1,10 +1,10 @@
 {
-  "name": "oracle",
   "type": "oracle",
   "host": "10.103.1.106",
   "username": "portic",
   "password": "tolos_01",
   "port": 1521,
   "servicename": "spicdes",
-  "logging": false
+  "entities": ["src/**/**.entity{.ts,.js}"],
+  "synchronize": false
 }
