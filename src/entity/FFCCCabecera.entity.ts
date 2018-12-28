@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn, OneToOne, JoinColumn } from 'typeorm'
+import { Entity, Column, PrimaryGeneratedColumn, OneToOne, JoinColumn, OneToMany, ManyToOne, ManyToMany } from 'typeorm'
+import { FFCC_EQUIPOS } from './FFCCEquipo.entity';
 
 @Entity({name: "FFCC_CABECERA", schema: "PORTIC"})
 export class FFCC_CABECERA {
@@ -24,4 +25,7 @@ export class FFCC_CABECERA {
     @Column({name: 'TEUS'}) TEUS: number
     @Column({name: 'NUMERO_TREN'}) numeroTren: string
     @Column({name: 'FECHA_OFICIAL_SALIDA'}) fechaOficialSalida: Date
+    @OneToMany(type => FFCC_EQUIPOS, equipo => equipo.cabecera)
+    @JoinColumn({ name: 'ID_EXP' })
+    equipos: FFCC_EQUIPOS[];
 }

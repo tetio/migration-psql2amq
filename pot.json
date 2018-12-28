@@ -1,0 +1,5 @@
+
+> migration_relational2activemq@0.0.1 start C:\lab\node\migration-psql2amq
+> ts-node src/main
+
+¨Desea terminar el trabajo por lotes (S/N)? 
