@@ -1,13 +1,14 @@
-import {Entity, Column, PrimaryGeneratedColumn, OneToOne, JoinColumn} from 'typeorm'
+import {Entity, Column, PrimaryGeneratedColumn, ManyToOne, JoinColumn} from 'typeorm'
 import { Country } from './country.entity';
 
 @Entity()
 export class City {
-    @PrimaryGeneratedColumn() city_id: number
+    @PrimaryGeneratedColumn({name: 'city_id'}) cityId: number
     @Column() city: string
-
-    @OneToOne(type => Country)
-    @JoinColumn({name: 'country_id'}) 
-    country: Country
+    @Column({name: 'country_id'}) countryId: number
     @Column() last_update: Date
+
+    @ManyToOne(type => Country)
+    @JoinColumn({name: 'country_id'}) 
+    country: Country   
 }

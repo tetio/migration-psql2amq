@@ -1,0 +1,217 @@
+{
+    "countryId": 103,
+    "country": "United States",
+    "last_update": "2006-02-15T08:44:00.000Z",
+    "cities": [
+        {
+            "cityId": 11,
+            "city": "Akron",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 33,
+            "city": "Arlington",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 41,
+            "city": "Augusta-Richmond County",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 42,
+            "city": "Aurora",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 65,
+            "city": "Bellevue",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 94,
+            "city": "Brockton",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 101,
+            "city": "Cape Coral",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 120,
+            "city": "Citrus Heights",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 123,
+            "city": "Clarksville",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 126,
+            "city": "Compton",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 135,
+            "city": "Dallas",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 140,
+            "city": "Dayton",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 155,
+            "city": "El Monte",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 171,
+            "city": "Fontana",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 177,
+            "city": "Garden Grove",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 178,
+            "city": "Garland",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 185,
+            "city": "Grand Prairie",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 187,
+            "city": "Greensboro",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 245,
+            "city": "Joliet",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 262,
+            "city": "Kansas City",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 292,
+            "city": "Lancaster",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 295,
+            "city": "Laredo",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 306,
+            "city": "Lincoln",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 322,
+            "city": "Manchester",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 333,
+            "city": "Memphis",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 404,
+            "city": "Peoria",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 433,
+            "city": "Roanoke",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 435,
+            "city": "Rockford",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 441,
+            "city": "Saint Louis",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 446,
+            "city": "Salinas",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 449,
+            "city": "San Bernardino",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 499,
+            "city": "Sterling Heights",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 508,
+            "city": "Sunnyvale",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 520,
+            "city": "Tallahassee",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        },
+        {
+            "cityId": 573,
+            "city": "Warren",
+            "countryId": 103,
+            "last_update": "2006-02-15T08:45:25.000Z"
+        }
+    ]
+}
