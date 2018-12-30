@@ -25,7 +25,6 @@ export class FFCC_CABECERA {
     @Column({name: 'TEUS'}) TEUS: number
     @Column({name: 'NUMERO_TREN'}) numeroTren: string
     @Column({name: 'FECHA_OFICIAL_SALIDA'}) fechaOficialSalida: Date
-    @OneToMany(type => FFCC_EQUIPOS, equipo => equipo.cabecera)
-    @JoinColumn({ name: 'ID_EXP' })
-    equipos: FFCC_EQUIPOS[];
+    @OneToMany(type => FFCC_EQUIPOS, equipo => equipo.idExp)
+    equipos: Array<FFCC_EQUIPOS>;
 }
