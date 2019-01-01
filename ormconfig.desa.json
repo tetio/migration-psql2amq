@@ -1,8 +1,8 @@
 {
   "type": "oracle",
-  "username": "consulta",
-  "password": "52.vival",
-  "connectString": "prod",
+  "username": "portic",
+  "password": "tolos_01",
+  "connectString": "desa",
   "entities": ["src/**/**.entity{.ts,.js}"],
   "logging": true,
   "logger": "advanced-console",
