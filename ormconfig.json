@@ -3,7 +3,7 @@
   "username": "consulta",
   "password": "52.vival",
   "connectString": "prod",
-  "entities": ["src/**/**.entity{.ts,.js}"],
+  "entities": ["src/**/FFCC**.entity{.ts,.js}"],
   "logging": true,
   "logger": "advanced-console",
   "synchronize": false
