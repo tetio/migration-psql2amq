@@ -39,7 +39,7 @@ export class FFCC_EQUIPOS {
     @Column({ name: 'CARGADOR' }) cargador: string
 
     @Column({ name: 'LUGAR_CARGA_DESCARGA' }) lugarCargaDescarga: string
-    @Column({ name: 'FECHA_ENTR_SOLIC' }) fechaEntrSolic: Date
+    @Column({ name: 'FECHA_ENTR_SOLIC', type: 'timestamp with local time zone'}) fechaEntrSolic: Date
     @Column({ name: 'CONSIGNATARIO' }) consignatario: string
     @Column({ name: 'ARMADOR' }) armador: string
     @Column({ name: 'BOOKING' }) booking: string
@@ -62,7 +62,7 @@ export class FFCC_EQUIPOS {
     @Column({ name: 'CONCEPTOS_FACTURACION' }) conceptosFacturacion: string
     @Column({ name: 'LOCALIDAD_ACARREO_FACTURACION' }) localidadAcarreoFacturacion: string
     @Column({ name: 'LUGAR_CARGA_DESCARGA_NIF' }) lugarCargaDescargaNif: string
-    @Column({ name: 'FECHA_PREVISTA_SALIDA' }) fechaPrevistaSalida: Date
+    @Column({ name: 'FECHA_PREVISTA_SALIDA', type: 'timestamp with local time zone'}) fechaPrevistaSalida: Date
     @Column({ name: 'ORDEN_SALIDA' }) ordenSalida: string
 
     @ManyToOne(type => FFCC_CABECERA)
