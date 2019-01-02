@@ -4,7 +4,7 @@ import { config } from "./config"
 
 export let Q_RENTALS = "/queue/RENTALS"
 export let Q_CUSTOMERS = "/queue/CUSTOMERS"
-export let Q_FFCC = "/queue/FFCC"
+export let Q_FFCC = "/queue/FFCC_BACKUP"
 
 const amqWS = config[process.env.NODE_ENV || 'local']['AMQ']["WS"]
 

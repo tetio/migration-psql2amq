@@ -1,0 +1,10 @@
+{
+  "type": "oracle",
+  "username": "consulta",
+  "password": "52.vival",
+  "connectString": "prod",
+  "entities": ["src/**/**.entity{.ts,.js}"],
+  "logging": true,
+  "logger": "advanced-console",
+  "synchronize": false
+}

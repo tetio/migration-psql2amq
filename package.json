@@ -42,6 +42,7 @@
   "scripts": {
     "noderun": "tsc && node src/index.js",
     "typeorm": "./node_modules/.bin/typeorm ",
+    "import-data": "ts-node src/ffcc.subscriber",
     "start": "ts-node src/main",
     "prestart:prod": "tsc",
     "start:prod": "node dist/main.js",
