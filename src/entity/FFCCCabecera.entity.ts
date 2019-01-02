@@ -1,10 +1,10 @@
 import { Entity, Column, PrimaryGeneratedColumn, OneToOne, JoinColumn, OneToMany, ManyToOne, ManyToMany } from 'typeorm'
 import { FFCC_EQUIPOS } from './FFCCEquipo.entity';
 
-@Entity({ name: "FFCC_CABECERA", schema: "PORTIC",  })
+@Entity({ name: "FFCC_CABECERA", schema: "PORTIC" })
 export class FFCC_CABECERA {
     @PrimaryGeneratedColumn({ name: 'ID_EXP' }) idExp: number
-    @Column({ name: 'COD_SERVICIO',  }) codServicio: string
+    @Column({ name: 'COD_SERVICIO' }) codServicio: string
     @Column({ name: 'EMPRESA_FERROVIARIA' }) empresaFerroviaria: string
     @Column({ name: 'OBSERVACIONES' }) observaciones: string
     @Column({ name: 'EMPRESA_PROP' }) empresaPropietaria: string
