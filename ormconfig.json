@@ -1,10 +1,42 @@
-{
-  "type": "oracle",
-  "username": "consulta",
-  "password": "52.vival",
-  "connectString": "prod",
-  "entities": ["src/**/FFCC**.entity{.ts,.js}"],
-  "logging": true,
-  "logger": "advanced-console",
-  "synchronize": false
-}
+[
+  {
+    "name": "postgres-local",
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "ffcc",
+    "entities": [
+      "src/**/ffcc**.entity{.ts,.js}"
+    ],
+    "synchronize": false
+  },
+  {
+    "name": "oracle-prod",
+    "type": "oracle",
+    "username": "consulta",
+    "password": "52.vival",
+    "connectString": "prod",
+    "entities": [
+      "src/**/FFCC**.entity{.ts,.js}"
+    ],
+    "logging": true,
+    "logger": "advanced-console",
+    "synchronize": false
+  },
+  {
+    "name": "oracle-desa",
+    "type": "oracle",
+    "username": "portic",
+    "password": "tolos_01",
+    "connectString": "desa",
+    "entities": [
+      "src/entity/FFCCCabecera.entity.ts",
+      "src/entity/FFCCEquipo.entity.ts"
+    ],
+    "logging": true,
+    "logger": "advanced-console",
+    "synchronize": false
+  }
+]

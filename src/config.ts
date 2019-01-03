@@ -23,7 +23,7 @@ let config: any = {
       // '10.120.1.129', 8161, 'admin', 'admin'
       'AMQ': {
         'WS': 'ws://localhost:61614/stomp',
-        //'WS': 'ws://localhost:61614',
+        //'WS': 'tcp://10.120.1.128:61613?protocols=STOMP;connectionTtl=20000',
         //'WS': 'ws://10.120.1.129:61614',
         'URL': 'localhost',
         'PORT': 61613

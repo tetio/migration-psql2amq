@@ -14,7 +14,8 @@ export function publish(queue: string, message?: string) {
   client.connect(headers,  (f) => {
     client.send(queue, headers, message)
     client.disconnect()
-  })
+  }, (e) => 
+  console.log(e))
 }
 
 
@@ -23,7 +24,8 @@ export function subscribe(queue: string, callback: (message: Stomp.Message) => a
   let headers = { ack: 'client' };
   return client.connect(headers, (f) => {
     return client.subscribe(queue, callback, headers)
-  })
+  }, (e) => 
+  console.log(e))
 }
 
 
