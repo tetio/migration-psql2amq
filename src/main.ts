@@ -43,7 +43,9 @@ async function closeDbConns(): Promise<void> {
 
 
 function slimDown(jsonFat: string): string {
-    return jsonFat.replace(/"\b.*: null,/g, '').replace(/"\b.*: null/g, '')
+    const a = jsonFat.replace(/"[a-zA-Z0-9]*":null,/g, '')
+    const b = a.replace(/,"[a-zA-Z0-9]*":null/g, '')
+    return b
 }
 
 
@@ -59,13 +61,12 @@ async function persist(data: FFCC_CABECERA): Promise<void> {
 
 
 
-async function importData(low: number, upper: number): Promise<void> {
+async function importData(lower: number, upper: number): Promise<void> {
     try {
         const cabeceras = await repositoryA.createQueryBuilder('a')
-            //.where("ID_EXP = 6945344")
-            .where(`ID_EXP >= ${low} and ID_EXP < ${upper}`)
+            .where(`ID_EXP >= ${lower} and ID_EXP < ${upper}`)
             .getMany()
-        const ccc = cabeceras.map(async cabecera => {
+        cabeceras.map(async cabecera => {
             const equipos = await repositoryB.createQueryBuilder('b')
                 .where("ID_EXP = " + cabecera.idExp)
                 .getMany()
@@ -98,7 +99,7 @@ async function run() {
         await importData(23000000, 100000000)
         // await importData(16000000, 19000000)
         // await importData(19000000, 26000000)
-        // await closeDbConns()
+         await closeDbConns()
     } catch (error) {
         console.log("Error run: ", error)
     }
