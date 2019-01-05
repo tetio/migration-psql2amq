@@ -42,8 +42,8 @@ async function closeDbConns(): Promise<void> {
 }
 
 
-function slimDown(jsonFat: string): string {
-    const a = jsonFat.replace(/"[a-zA-Z0-9]*":null,/g, '')
+function slimDown(fatJson: string): string {
+    const a = fatJson.replace(/"[a-zA-Z0-9]*":null,/g, '')
     const b = a.replace(/,"[a-zA-Z0-9]*":null/g, '')
     return b
 }
@@ -66,16 +66,16 @@ async function importData(lower: number, upper: number): Promise<void> {
         const cabeceras = await repositoryA.createQueryBuilder('a')
             .where(`ID_EXP >= ${lower} and ID_EXP < ${upper}`)
             .getMany()
-        cabeceras.map(async cabecera => {
+        await Promise.all(cabeceras.map(async cabecera => {
             const equipos = await repositoryB.createQueryBuilder('b')
                 .where("ID_EXP = " + cabecera.idExp)
                 .getMany()
             cabecera.equipos = equipos
             //return cabecera
-            persist(cabecera)
+            await persist(cabecera)
             //publish(Q_FFCC, slimDown(JSON.stringify(cabecera)))
 
-        })
+        }))
         //        ccc.map(c => publish(Q_FFCC, slimDown(JSON.stringify(c))))
     } catch (error) {
         console.log("Error importData: ", error)
@@ -86,20 +86,26 @@ async function importData(lower: number, upper: number): Promise<void> {
 async function run() {
     try {
         await init()
-        await importData(0, 11000000)
-        await importData(11000000, 12500000)
-        await importData(12500000, 14000000)
-        await importData(14000000, 15000000)
-        await importData(15000000, 16000000)
-        await importData(16000000, 17000000)
-        await importData(17000000, 18000000)
-        await importData(18000000, 19000000)
-        await importData(19000000, 21000000)
-        await importData(21000000, 23000000)
-        await importData(23000000, 100000000)
-        // await importData(16000000, 19000000)
-        // await importData(19000000, 26000000)
-         await closeDbConns()
+        // await importData(0, 11000000)
+        // await importData(11000000, 12500000)
+        // await importData(12500000, 14000000)
+        // await importData(14000000, 15000000)
+        // await importData(15000000, 16000000)
+        // await importData(16000000, 17000000)
+        // await importData(17000000, 18000000)
+        // await importData(18000000, 19000000)
+        // await importData(19000000, 21000000)
+        // await importData(21000000, 23000000)
+        // await importData(23000000, 100000000)
+        
+        // non stop!!!
+        await importData(0, 10000000)
+        await importData(10000000, 20000000)
+        await importData(20000000, 100000000)
+        
+        
+        
+        //await closeDbConns()
     } catch (error) {
         console.log("Error run: ", error)
     }
